@@ -46,25 +46,25 @@ cols <- c(cols[1],cols[2])
 
 # WOS Viewer
 plotvars_cn <- c(x = 'PY', yprim = 'n_artigos', ysec = 'citacoes_norm')
-legvars_cn <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações por artigo', title = '(b) Artigos publicados e Citações normalizadas por ano de publicação (WoS)')
+legvars_cn <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações por artigo', title = '(ii) Artigos publicados e Citações normalizadas por ano de publicação (WoS)')
 
 names(cols) <- c(legvars_cn['yprim'], legvars_cn['ysec'])
 p_wos_citacoes_norm <- barline(wos_group_citacoes, plotvars_cn, cols, legvars_cn);p_wos_citacoes_norm
 
 
 plotvars <- c(x = 'PY', yprim = 'n_artigos', ysec = 'citacoes_databases')
-legvars <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações', title = '(a) Artigos publicados e Citações por ano de publicação (WoS)')
+legvars <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações', title = '(i) Artigos publicados e Citações por ano de publicação (WoS)')
 names(cols) <- c(legvars['yprim'], legvars['ysec'])
 p_wos_citacoes <- barline(wos_group_citacoes, plotvars, cols, legvars);p_wos_citacoes
 
 # Scopus
 plotvars <- c(x = 'Year', yprim = 'n_artigos', ysec = 'citacoes_norm')
-legvars <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações por artigo', title = '(b) Artigos publicados e Citações normalizadas por ano de publicação (Scopus)')
+legvars <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações por artigo', title = '(ii) Artigos publicados e Citações normalizadas por ano de publicação (Scopus)')
 names(cols) <- c(legvars['yprim'], legvars['ysec'])
 p_scopus_citacoes_norm <- barline(scopus_group, plotvars, cols, legvars,x.angle = 90);p_scopus_citacoes_norm
 
 plotvars <- c(x = 'Year', yprim = 'n_artigos', ysec = 'citacoes_teste')
-legvars <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações', title = '(a) Artigos publicados e Citações normalizadas por ano de publicação (Scopus)')
+legvars <- c(x = 'Ano Publicação',yprim = 'Nº Artigos',ysec = 'Citações', title = '(i) Artigos publicados e Citações por ano de publicação (Scopus)')
 names(cols) <- c(legvars['yprim'], legvars['ysec'])
 p_scopus_citacoes <- barline(scopus_group, plotvars, cols, legvars, x.angle = 90);p_scopus_citacoes
 
